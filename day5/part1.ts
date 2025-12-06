@@ -16,6 +16,7 @@ for (const input of inputs) {
 
     if (ingredientsFlag) {
         ingredients.push(parseInt(input, 10));
+        continue;
     }
 
     const bounds = input.split('-').map(bound => parseInt(bound, 10));
